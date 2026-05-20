@@ -8,144 +8,176 @@ type Episode = {
   episode: string;
   guest: string;
   duration: string;
-  platform: string;
+  published: string;
+  youtubeUrl: string;
+  youtubeViews: number;
+  youtubeLikes: number;
+  youtubeComments: number;
   moodTags: string[];
   summary: string;
-  newListenerScore: number;
-  chaosScore: number;
-  guestScore: number;
-  classicScore: number;
   themes: string[];
 };
 
 const episodes: Episode[] = [
   {
-    id: 1,
-    title: "Starter Episode: The Lads at Their Best",
-    episode: "Public Episode",
-    guest: "No guest",
-    duration: "1h 45m",
-    platform: "YouTube / Podcast apps",
-    moodTags: ["Easy Listen", "Classic Lads", "New Starter"],
-    summary:
-      "A strong starting point for new listeners who want the feel of the show without needing deep fan context.",
-    newListenerScore: 95,
-    chaosScore: 55,
-    guestScore: 30,
-    classicScore: 85,
-    themes: ["starter", "lads", "banter"],
-  },
-  {
-    id: 2,
-    title: "Chaos Energy Episode",
-    episode: "Public Episode",
-    guest: "No guest",
-    duration: "2h 05m",
-    platform: "YouTube / Podcast apps",
-    moodTags: ["Chaos", "Classic Lads", "Liverpool Energy"],
-    summary:
-      "A louder, more chaotic pick for listeners who want the full Have A Word energy.",
-    newListenerScore: 70,
-    chaosScore: 98,
-    guestScore: 20,
-    classicScore: 90,
-    themes: ["chaos", "liverpool", "lads"],
-  },
-  {
-    id: 3,
-    title: "Guest Episode: Easy Entry Point",
-    episode: "Public Episode",
-    guest: "Guest appearance",
-    duration: "1h 50m",
-    platform: "YouTube / Podcast apps",
+    id: 381,
+    title: "Julian Deane | Have A Word Podcast #381",
+    episode: "#381",
+    guest: "Julian Deane",
+    duration: "2h 14m",
+    published: "2026-05-16",
+    youtubeUrl: "https://www.youtube.com/watch?v=yDqyN6s1ego",
+    youtubeViews: 43173,
+    youtubeLikes: 751,
+    youtubeComments: 121,
     moodTags: ["Guest Episode", "Easy Listen", "New Starter"],
     summary:
-      "A guest-led episode that still feels accessible for people who are new to the show.",
-    newListenerScore: 90,
-    chaosScore: 45,
-    guestScore: 95,
-    classicScore: 65,
-    themes: ["guest", "starter", "easy"],
+      "A recent guest episode with Julian Deane. A good current entry point for fans who want guest energy without going deep into the archive.",
+    themes: ["recent", "guest", "starter"],
   },
   {
-    id: 4,
-    title: "Deep Cut for the Lid Army",
-    episode: "Public Episode",
+    id: 380,
+    title: "Mike Bubbins | Have A Word Podcast #380",
+    episode: "#380",
+    guest: "Mike Bubbins",
+    duration: "2h 31m",
+    published: "2026-05-09",
+    youtubeUrl: "https://www.youtube.com/watch?v=-elisiT7Urg",
+    youtubeViews: 59085,
+    youtubeLikes: 950,
+    youtubeComments: 167,
+    moodTags: ["Guest Episode", "Easy Listen", "Long Drive"],
+    summary:
+      "A longer guest episode with Mike Bubbins. Useful for listeners who want a recent guest-led episode with a steady full-length listen.",
+    themes: ["recent", "guest", "long listen"],
+  },
+  {
+    id: 379,
+    title: "Rick Edwards | Have A Word Podcast #379",
+    episode: "#379",
+    guest: "Rick Edwards",
+    duration: "2h 17m",
+    published: "2026-05-02",
+    youtubeUrl: "https://www.youtube.com/watch?v=jQ-j2YyphhY",
+    youtubeViews: 56297,
+    youtubeLikes: 868,
+    youtubeComments: 79,
+    moodTags: ["Guest Episode", "Easy Listen", "New Starter"],
+    summary:
+      "A recent guest episode with Rick Edwards. Good for newer listeners who want a recognisable guest and a clean entry point.",
+    themes: ["recent", "guest", "accessible"],
+  },
+  {
+    id: 378,
+    title: "Taylor Ryan | Have A Word Podcast #378",
+    episode: "#378",
+    guest: "Taylor Ryan",
+    duration: "2h 27m",
+    published: "2026-04-25",
+    youtubeUrl: "https://www.youtube.com/watch?v=VsLfwRKxTxQ",
+    youtubeViews: 64044,
+    youtubeLikes: 928,
+    youtubeComments: 140,
+    moodTags: ["Guest Episode", "Chaos", "Long Drive"],
+    summary:
+      "A lively recent guest episode with Taylor Ryan. Better for listeners who want more energy and a longer watch.",
+    themes: ["recent", "guest", "energy"],
+  },
+  {
+    id: 376,
+    title: "Edd Hedges | Have A Word Podcast #376",
+    episode: "#376",
+    guest: "Edd Hedges",
+    duration: "2h 13m",
+    published: "2026-04-11",
+    youtubeUrl: "https://www.youtube.com/watch?v=GMtBoRhvwqk",
+    youtubeViews: 58745,
+    youtubeLikes: 1020,
+    youtubeComments: 163,
+    moodTags: ["Guest Episode", "Easy Listen", "New Starter"],
+    summary:
+      "A balanced recent guest episode with Edd Hedges. A safe pick for people who want something current and accessible.",
+    themes: ["recent", "guest", "balanced"],
+  },
+  {
+    id: 374,
+    title: "Joel Dommett | Have A Word Podcast #374",
+    episode: "#374",
+    guest: "Joel Dommett",
+    duration: "2h 15m",
+    published: "2026-03-28",
+    youtubeUrl: "https://www.youtube.com/watch?v=6iuJuCJxX0g",
+    youtubeViews: 66838,
+    youtubeLikes: 1400,
+    youtubeComments: 302,
+    moodTags: ["Guest Episode", "New Starter", "Easy Listen"],
+    summary:
+      "A strong guest episode with Joel Dommett. One of the better starter picks in this set because it has strong public engagement and an accessible guest.",
+    themes: ["guest", "starter", "high engagement"],
+  },
+  {
+    id: 367,
+    title: "Tom Davis | Have A Word Podcast #367",
+    episode: "#367",
+    guest: "Tom Davis",
+    duration: "2h 9m",
+    published: "2026-02-09",
+    youtubeUrl: "https://www.youtube.com/watch?v=K925NCampgI",
+    youtubeViews: 69323,
+    youtubeLikes: 1069,
+    youtubeComments: 131,
+    moodTags: ["Guest Episode", "Easy Listen", "New Starter"],
+    summary:
+      "A guest episode with Tom Davis. A useful pick for people who want a recognisable guest and strong public interest.",
+    themes: ["guest", "popular", "starter"],
+  },
+  {
+    id: 370,
+    title: "Fin Taylor | Have A Word Podcast #370",
+    episode: "#370",
+    guest: "Fin Taylor",
+    duration: "2h 32m",
+    published: "2026-03-02",
+    youtubeUrl: "https://www.youtube.com/watch?v=eSV9Ysexhgw",
+    youtubeViews: 96227,
+    youtubeLikes: 1356,
+    youtubeComments: 173,
+    moodTags: ["Guest Episode", "Chaos", "Long Drive"],
+    summary:
+      "A high-engagement guest episode with Fin Taylor. Strong for listeners who want a longer, more lively guest pick.",
+    themes: ["guest", "popular", "long listen"],
+  },
+  {
+    id: 373,
+    title: "Paddy McDonnell | Have A Word Podcast #373",
+    episode: "#373",
+    guest: "Paddy McDonnell",
+    duration: "2h 18m",
+    published: "2026-03-23",
+    youtubeUrl: "https://www.youtube.com/watch?v=iwnKJoNJcIs",
+    youtubeViews: 59811,
+    youtubeLikes: 823,
+    youtubeComments: 67,
+    moodTags: ["Guest Episode", "Chaos", "Classic Lads"],
+    summary:
+      "A Paddy McDonnell guest episode. Better for listeners who want a livelier pick rather than a calm starter episode.",
+    themes: ["guest", "chaos", "energy"],
+  },
+  {
+    id: 371,
+    title: "The Boys | Have A Word Podcast #371",
+    episode: "#371",
     guest: "No guest",
-    duration: "2h 20m",
-    platform: "YouTube / Podcast apps",
-    moodTags: ["Classic Lads", "Chaos", "Hardcore Lid"],
+    duration: "2h 9m",
+    published: "2026-03-09",
+    youtubeUrl: "https://www.youtube.com/watch?v=ius4M8p2Kvc",
+    youtubeViews: 69794,
+    youtubeLikes: 930,
+    youtubeComments: 120,
+    moodTags: ["Classic Lads", "Easy Listen", "Long Drive"],
     summary:
-      "A better pick for returning fans who already understand the show’s rhythm and references.",
-    newListenerScore: 45,
-    chaosScore: 85,
-    guestScore: 20,
-    classicScore: 96,
-    themes: ["deep cut", "references", "classic"],
-  },
-  {
-    id: 5,
-    title: "Commute-Friendly Listen",
-    episode: "Public Episode",
-    guest: "No guest",
-    duration: "58m",
-    platform: "Podcast apps",
-    moodTags: ["Easy Listen", "New Starter"],
-    summary:
-      "A lighter pick for someone who wants a shorter listen without committing to a full long episode.",
-    newListenerScore: 88,
-    chaosScore: 35,
-    guestScore: 25,
-    classicScore: 60,
-    themes: ["short", "commute", "easy"],
-  },
-  {
-    id: 6,
-    title: "Liverpool Energy Pick",
-    episode: "Public Episode",
-    guest: "No guest",
-    duration: "1h 40m",
-    platform: "YouTube / Podcast apps",
-    moodTags: ["Liverpool Energy", "Classic Lads"],
-    summary:
-      "A strong pick for fans who want the local humour, rhythm and warmth of the show.",
-    newListenerScore: 75,
-    chaosScore: 70,
-    guestScore: 20,
-    classicScore: 82,
-    themes: ["liverpool", "local", "lads"],
-  },
-  {
-    id: 7,
-    title: "Guest Chemistry Pick",
-    episode: "Public Episode",
-    guest: "Guest appearance",
-    duration: "2h 00m",
-    platform: "YouTube / Podcast apps",
-    moodTags: ["Guest Episode", "Chaos"],
-    summary:
-      "A guest episode where the chemistry is the main reason to watch.",
-    newListenerScore: 72,
-    chaosScore: 78,
-    guestScore: 96,
-    classicScore: 70,
-    themes: ["guest", "chemistry", "chaos"],
-  },
-  {
-    id: 8,
-    title: "Classic New Fan Guide Pick",
-    episode: "Public Episode",
-    guest: "No guest",
-    duration: "1h 30m",
-    platform: "YouTube / Podcast apps",
-    moodTags: ["New Starter", "Easy Listen", "Classic Lads"],
-    summary:
-      "A safe first recommendation for someone who wants to understand why fans love the show.",
-    newListenerScore: 98,
-    chaosScore: 50,
-    guestScore: 25,
-    classicScore: 88,
-    themes: ["starter", "classic", "guide"],
+      "A no-guest episode with the lads. Best for fans who want the core show dynamic rather than a guest-led episode.",
+    themes: ["lads", "classic", "no guest"],
   },
 ];
 
@@ -154,8 +186,8 @@ const moods = [
   "Guest Episode",
   "Easy Listen",
   "Classic Lads",
-  "Liverpool Energy",
   "New Starter",
+  "Long Drive",
 ];
 
 export default function OnlyLidsPage() {
@@ -167,62 +199,93 @@ export default function OnlyLidsPage() {
   const [generated, setGenerated] = useState(false);
 
   const recommendations = useMemo(() => {
-    return [...episodes]
-      .map((episode) => {
-        let score = 0;
-        const reasons: string[] = [];
+  const maxViews = Math.max(...episodes.map((episode) => episode.youtubeViews));
+  const maxLikes = Math.max(...episodes.map((episode) => episode.youtubeLikes));
 
-        if (episode.moodTags.includes(mood)) {
-          score += 35;
-          reasons.push(`fits the ${mood.toLowerCase()} mood`);
-        }
+  return [...episodes]
+    .map((episode) => {
+      let score = 0;
+      const reasons: string[] = [];
 
-        if (familiarity === "New" && episode.newListenerScore > 80) {
-          score += 25;
-          reasons.push("good for new listeners");
-        }
+      if (episode.moodTags.includes(mood)) {
+        score += 35;
+        reasons.push(`matches the ${mood.toLowerCase()} mood`);
+      }
 
-        if (familiarity === "Hardcore Lid" && episode.classicScore > 80) {
-          score += 25;
-          reasons.push("proper Lid Army energy");
-        }
+      if (familiarity === "New" && episode.moodTags.includes("New Starter")) {
+        score += 20;
+        reasons.push("works well as a starter pick");
+      }
 
-        if (guestPreference === "Guest episodes preferred" && episode.guestScore > 80) {
-          score += 20;
-          reasons.push("strong guest chemistry");
-        }
+      if (familiarity === "Hardcore Lid" && episode.moodTags.includes("Classic Lads")) {
+        score += 20;
+        reasons.push("leans into the core lads format");
+      }
 
-        if (guestPreference === "No guest episodes" && episode.guest === "No guest") {
-          score += 20;
-          reasons.push("keeps it with the lads");
-        }
+      if (
+        guestPreference === "Guest episodes preferred" &&
+        episode.moodTags.includes("Guest Episode")
+      ) {
+        score += 20;
+        reasons.push("matches your guest preference");
+      }
 
-        if (time === "30 mins" && episode.duration.includes("58m")) {
-          score += 15;
-          reasons.push("better fit for a shorter listen");
-        }
+      if (
+        guestPreference === "No guest episodes" &&
+        !episode.moodTags.includes("Guest Episode")
+      ) {
+        score += 20;
+        reasons.push("keeps it with the lads");
+      }
 
-        if (time === "Long drive" && !episode.duration.includes("58m")) {
-          score += 10;
-          reasons.push("good for a longer listen");
-        }
+      if (time === "Long drive" && episode.moodTags.includes("Long Drive")) {
+        score += 15;
+        reasons.push("fits a longer listen");
+      }
 
-        if (avoid === "No heavy chaos" && episode.chaosScore > 85) {
-          score -= 30;
-        }
+      if (time === "30 mins" && !episode.moodTags.includes("Long Drive")) {
+        score += 8;
+        reasons.push("is one of the lighter picks from this set");
+      }
 
-        return {
-          ...episode,
-          score,
-          reason:
-            reasons.length > 0
-              ? `Picked because it ${reasons.join(", ")}.`
-              : "Picked as a balanced recommendation from the curated starter set.",
-        };
-      })
-      .sort((a, b) => b.score - a.score)
-      .slice(0, 5);
-  }, [familiarity, mood, time, guestPreference, avoid]);
+      const viewsScore = maxViews
+        ? Math.round((episode.youtubeViews / maxViews) * 10)
+        : 0;
+
+      const likesScore = maxLikes
+        ? Math.round((episode.youtubeLikes / maxLikes) * 5)
+        : 0;
+
+      score += viewsScore + likesScore;
+
+      if (viewsScore + likesScore >= 12) {
+        reasons.push("has strong public YouTube engagement");
+      }
+
+      const publishedDate = new Date(episode.published);
+      const daysOld =
+        (Date.now() - publishedDate.getTime()) / (1000 * 60 * 60 * 24);
+
+      if (daysOld < 45) {
+        score += 10;
+        reasons.push("is a recent episode");
+      } else if (daysOld < 90) {
+        score += 6;
+        reasons.push("is still fairly recent");
+      }
+
+      return {
+        ...episode,
+        score,
+        reason:
+          reasons.length > 0
+            ? `Picked because it ${reasons.join(", ")}.`
+            : "Picked as a balanced recommendation from the public episode set.",
+      };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5);
+}, [familiarity, mood, time, guestPreference, avoid]);
 
   return (
     <main className="min-h-screen bg-[#090d2a] text-white">
@@ -455,6 +518,10 @@ export default function OnlyLidsPage() {
                 <h2 className="mt-3 text-4xl font-black uppercase tracking-[-0.05em]">
                   {generated ? "Recommended picks" : "Waiting for your mood"}
                 </h2>
+
+               <p className="mt-2 text-sm font-bold text-white/50">
+                  LidScore is based on your choices, recency and public YouTube engagement.
+                </p> 
               </div>
               <span className="border-2 border-[#ff4a1c] bg-[#ff4a1c] px-3 py-1 text-sm font-black uppercase text-white">
                 {generated ? `${recommendations.length} picks` : "MVP"}
@@ -487,7 +554,7 @@ export default function OnlyLidsPage() {
                         </p>
                       </div>
                       <div className="hidden border-2 border-white/20 px-3 py-1 text-xs font-black uppercase text-white/60 sm:block">
-                        {episode.platform}
+                        YouTube
                       </div>
                     </div>
 
@@ -509,9 +576,14 @@ export default function OnlyLidsPage() {
                       {episode.reason}
                     </p>
 
-                    <button className="mt-4 w-full border-4 border-[#ff4a1c] px-5 py-3 font-black uppercase text-[#ff4a1c] transition hover:bg-[#ff4a1c] hover:text-white">
-                      Watch / listen link to add later
-                    </button>
+                    <a
+                      href={episode.youtubeUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 block w-full border-4 border-[#ff4a1c] px-5 py-3 text-center font-black uppercase text-[#ff4a1c] transition hover:bg-[#ff4a1c] hover:text-white"
+                    >
+                      Watch on YouTube
+                    </a>
                   </article>
                 ))}
               </div>
